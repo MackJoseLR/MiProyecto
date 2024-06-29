@@ -1,0 +1,122 @@
+#texto{
+    animation: mueveTexto 2s linear 1;
+}
+
+
+@keyframes mueveTexto{
+    from{
+        top: -130px;
+        opacity: 0;
+    }
+    to{
+        top: 30px;
+        opacity: 1;
+    }
+} 
+#mensaje{
+    animation: mueveMensaje 4s linear 1;
+}
+
+@keyframes mueveMensaje{
+    0%{
+        left: -700px;
+        transform: rotate(45deg);
+        font-size: 0rem;
+    }
+    14%{
+        left: -600px;
+        transform: rotate(90deg);
+        top: -300px
+    }
+    28%{
+        left: -500px;
+        transform: rotate(165deg);
+        font-size: 1rem;
+    }
+    42%{
+        left: -400px;
+        transform: rotate(180deg);
+        top: 80px;
+    }
+    56%{
+        left: -300px;
+        transform: rotate(225deg);
+        font-size: 2rem;
+    }
+    70%{
+        left: -200px;
+        transform: rotate(270deg);
+    }
+    84%{
+        left: -100px;
+        transform: rotate(315deg);
+        font-size: 3rem;
+    }
+    100%{
+        left: 0px;
+        transform: rotate(360deg);
+    }
+}
+
+.burbuja{
+    animation: burbujas ease-in-out infinite;
+}
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: -2%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(2){
+    width: 120px;
+    height: 120px;
+    left: 15%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(3){
+    width: 160px;
+    height: 160px;
+    left: 30%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(4){
+    width: 120px;
+    height: 120px;
+    left: 45%;
+    animation-duration: 3s;
+    animation-delay: 7s;
+}
+.burbuja:nth-child(5){
+    width: 80px;
+    height: 80px;
+    left: 60%;
+    animation-duration: 4s;
+    animation-delay: 9s;
+}
+.burbuja:nth-child(6){
+    width: 120px;
+    height: 120px;
+    left: 75%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: -5vh;
+        opacity: 0;
+    }
+    25%{
+        transform: translateX(50px);
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
